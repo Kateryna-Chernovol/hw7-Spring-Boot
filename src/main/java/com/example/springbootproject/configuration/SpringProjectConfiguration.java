@@ -11,8 +11,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class SpringProjectConfiguration {
 
-    @Value("${environment}")
-//    @Value("test")
+    @Value(value = "${environment}")
     private String env;
 
     @Bean
